@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Calypso_Testimonial::testimonial_content" title="Testimonial" module="Calypso_Testimonial" sortOrder="50" parent="Magento_Backend::content" resource="Calypso_Testimonial::testimonial_content" />
+        <add id="Calypso_Testimonial::post" title="Manage Testimonial" module="Calypso_Testimonial" sortOrder="0" parent="Calypso_Testimonial::testimonial_content" action="testimonial/post" resource="Calypso_Testimonial::post"/>
+    </menu>
+</config>
