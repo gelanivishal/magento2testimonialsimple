@@ -87,7 +87,7 @@ class Post  extends \Magento\Framework\Model\AbstractModel implements PostInterf
      */
     public function getId()
     {
-        return $this->getData(self::POST_ID);
+        return $this->getData(self::ID);
     }
 
     /**
@@ -102,16 +102,16 @@ class Post  extends \Magento\Framework\Model\AbstractModel implements PostInterf
 
     /**
      * Return the desired URL of a post
-     *  eg: /blog/view/index/id/1/
+     *  eg: /testimonial/view/index/id/1/
      * @TODO Move to a PostUrl model, and make use of the
      * @TODO rewrite system, using url_key to build url.
-     * @TODO desired url: /blog/my-latest-blog-post-title
+     * @TODO desired url: /testimonial/my-latest-blog-post-title
      *
      * @return string
      */
     public function getUrl()
     {
-        return $this->_urlBuilder->getUrl('blog/' . $this->getUrlKey());
+        return $this->_urlBuilder->getUrl('testimonial/' . $this->getUrlKey());
     }
 
     /**
@@ -232,7 +232,7 @@ class Post  extends \Magento\Framework\Model\AbstractModel implements PostInterf
      */
     public function setId($id)
     {
-        return $this->setData(self::POST_ID, $id);
+        return $this->setData(self::ID, $id);
     }
 
     /**

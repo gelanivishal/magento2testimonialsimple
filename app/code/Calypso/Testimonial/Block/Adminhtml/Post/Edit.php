@@ -25,7 +25,7 @@ class Edit extends \Magento\Backend\Block\Widget\Form\Container
     }
 
     /**
-     * Initialize blog post edit block
+     * Initialize testimonial post edit block
      *
      * @return void
      */

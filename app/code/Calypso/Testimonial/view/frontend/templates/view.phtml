@@ -3,12 +3,12 @@
 /** @var $post \Calypso\Testimonial\Model\Post */
 $post = $block->getPost();
 ?>
-<h1 class="blog-post-item-title"><?php echo $post->getTitle() ?></h1>
+<h1 class="testimonial-post-item-title"><?php echo $post->getTitle() ?></h1>
 
-<div class="blog-post-item-content">
+<div class="testimonial-post-item-content">
     <?php echo $post->getContent(); ?>
 </div>
 
-<div class="blog-post-item-meta">
+<div class="testimonial-post-item-meta">
     <strong><?php echo __('Created at:') ?></strong> <?php echo $post->getCreationTime() ?>
 </div>

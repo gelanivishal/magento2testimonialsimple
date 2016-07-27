@@ -7,7 +7,7 @@ interface PostInterface
     /**
      * Constants for keys of data array. Identical to the name of the getter in snake case
      */
-    const POST_ID       = 'id';
+    const ID            = 'id';
     const URL_KEY       = 'url_key';
     const TITLE         = 'title';
     const CONTENT       = 'content';

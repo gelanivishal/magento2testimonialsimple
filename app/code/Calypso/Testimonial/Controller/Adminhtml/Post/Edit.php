@@ -57,7 +57,7 @@ class Edit extends \Magento\Backend\App\Action
     }
 
     /**
-     * Edit Blog post
+     * Edit Testimonial post
      *
      * @return \Magento\Backend\Model\View\Result\Page|\Magento\Backend\Model\View\Result\Redirect
      * @SuppressWarnings(PHPMD.NPathComplexity)

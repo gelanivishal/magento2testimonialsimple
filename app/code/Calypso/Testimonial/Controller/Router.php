@@ -77,7 +77,7 @@ class Router implements \Magento\Framework\App\RouterInterface
      */
     public function match(\Magento\Framework\App\RequestInterface $request)
     {
-        $url_key = trim($request->getPathInfo(), '/blog/');
+        $url_key = trim($request->getPathInfo(), '/testimonial/');
         $url_key = rtrim($url_key, '/');
 
         /** @var \Calypso\Testimonial\Model\Post $post */
@@ -87,7 +87,7 @@ class Router implements \Magento\Framework\App\RouterInterface
             return null;
         }
 
-        $request->setModuleName('blog')->setControllerName('view')->setActionName('index')->setParam('post_id', $post_id);
+        $request->setModuleName('testimonial')->setControllerName('view')->setActionName('index')->setParam('id', $post_id);
         $request->setAlias(\Magento\Framework\Url::REWRITE_REQUEST_PATH_ALIAS, $url_key);
 
         return $this->actionFactory->create('Magento\Framework\App\Action\Forward');

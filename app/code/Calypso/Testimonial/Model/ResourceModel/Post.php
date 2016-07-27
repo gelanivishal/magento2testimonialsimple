@@ -2,7 +2,7 @@
 namespace Calypso\Testimonial\Model\ResourceModel;
 
 /**
- * Blog post mysql resource
+ * Testimonial post mysql resource
  */
 class Post extends \Magento\Framework\Model\ResourceModel\Db\AbstractDb
 {
@@ -165,7 +165,7 @@ class Post extends \Magento\Framework\Model\ResourceModel\Db\AbstractDb
     public function checkUrlKey($url_key)
     {
         $select = $this->_getLoadByUrlKeySelect($url_key, 1);
-        $select->reset(\Zend_Db_Select::COLUMNS)->columns('bp.post_id')->limit(1);
+        $select->reset(\Zend_Db_Select::COLUMNS)->columns('bp.id')->limit(1);
 
         return $this->getConnection()->fetchOne($select);
     }

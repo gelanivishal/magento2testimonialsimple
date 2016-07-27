@@ -1,18 +1,18 @@
 <?php /** @var $block \Calypso\Testimonial\Block\PostList */ ?>
 <h1><?php echo __('Latest Testimonial') ?></h1>
-<ul class="blog-post-list">
+<ul class="testimonail-post-list">
     <?php /** @var $post \Calypso\Testimonial\Model\Post */ ?>
     <?php foreach ($block->getPosts() as $post): ?>
-        <li class="blog-post-list-item">
-            <h3 class="blog-post-item-title">
+        <li class="testimonail-post-list-item">
+            <h3 class="testimonail-post-item-title">
                 <a href="<?php echo $post->getUrl() ?>"><?php echo $post->getTitle() ?></a>
             </h3>
 
-            <div class="blog-post-item-content">
+            <div class="testimonail-post-item-content">
                 <?php echo $post->getContent(); ?>
             </div>
 
-            <div class="blog-post-item-meta">
+            <div class="testimonail-post-item-meta">
                 <strong><?php echo __('Created at:') ?></strong> <?php echo $post->getCreationTime() ?>
             </div>
         </li>

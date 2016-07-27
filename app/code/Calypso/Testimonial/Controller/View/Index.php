@@ -20,7 +20,7 @@ class Index extends Action
     }
 
     /**
-     * Blog Index, shows a list of recent testimonial posts.
+     * Testimonial Index, shows a list of recent testimonial posts.
      *
      * @return \Magento\Framework\View\Result\PageFactory
      */

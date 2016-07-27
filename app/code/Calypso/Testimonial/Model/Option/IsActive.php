@@ -17,7 +17,7 @@ class IsActive implements \Magento\Framework\Data\OptionSourceInterface
 
     /**
      * Prepare post's statuses.
-     * Available event blog_post_get_available_statuses to customize statuses.
+     * Available event testimonial_post_get_available_statuses to customize statuses.
      *
      * @return array
      */

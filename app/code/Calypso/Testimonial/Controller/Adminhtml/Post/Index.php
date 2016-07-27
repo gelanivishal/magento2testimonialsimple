@@ -42,7 +42,7 @@ class Index extends \Magento\Backend\App\Action
     }
 
     /**
-     * Is the user allowed to view the blog post grid.
+     * Is the user allowed to view the testimonial post grid.
      *
      * @return bool
      */

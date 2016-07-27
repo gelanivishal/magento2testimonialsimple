@@ -9,8 +9,8 @@ use Magento\Framework\UrlInterface;
 class PostActions extends Column
 {
     /** Url path */
-    const BLOG_URL_PATH_EDIT = 'testimonial/post/edit';
-    const BLOG_URL_PATH_DELETE = 'testimonial/post/delete';
+    const TESTIMONIAL_URL_PATH_EDIT = 'testimonial/post/edit';
+    const TESTIMONIAL_URL_PATH_DELETE = 'testimonial/post/delete';
 
     /** @var UrlInterface */
     protected $urlBuilder;
@@ -34,7 +34,7 @@ class PostActions extends Column
         UrlInterface $urlBuilder,
         array $components = [],
         array $data = [],
-        $editUrl = self::BLOG_URL_PATH_EDIT
+        $editUrl = self::TESTIMONIAL_URL_PATH_EDIT
     ) {
         $this->urlBuilder = $urlBuilder;
         $this->editUrl = $editUrl;
@@ -58,7 +58,7 @@ class PostActions extends Column
                         'label' => __('Edit')
                     ];
                     $item[$name]['delete'] = [
-                        'href' => $this->urlBuilder->getUrl(self::BLOG_URL_PATH_DELETE, ['id' => $item['id']]),
+                        'href' => $this->urlBuilder->getUrl(self::TESTIMONIAL_URL_PATH_DELETE, ['id' => $item['id']]),
                         'label' => __('Delete'),
                         'confirm' => [
                             'title' => __('Delete "${ $.$data.title }"'),
